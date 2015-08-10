@@ -5,4 +5,6 @@
   <entry-point class="edu.pdx.cs410J.dcobbley.client.PhoneBillGwt"/>
 
   <servlet path="/ping" class="edu.pdx.cs410J.dcobbley.server.PingServiceImpl"/>
+  <servlet path="/add" class="edu.pdx.cs410J.dcobbley.server.PhoneBillServiceImpl"/>
+
 </module>
