@@ -5,15 +5,17 @@
 <web-app>
 
   <!-- Servlets -->
+
   <servlet>
-    <servlet-name>pingServlet</servlet-name>
-    <servlet-class>edu.pdx.cs410J.dcobbley.server.PingServiceImpl</servlet-class>
+    <servlet-name>PhoneBillServlet</servlet-name>
+    <servlet-class>edu.pdx.cs410J.dcobbley.server.PhoneBillServiceImpl</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>pingServlet</servlet-name>
-    <url-pattern>/phonebill/ping</url-pattern>
+    <servlet-name>PhoneBillServlet</servlet-name>
+    <url-pattern>/phonebill/PhoneBillService</url-pattern>
   </servlet-mapping>
+
 
   <!-- Default page to serve -->
   <welcome-file-list>
