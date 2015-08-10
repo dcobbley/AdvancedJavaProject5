@@ -29,6 +29,7 @@ public class PhoneBillGwt implements EntryPoint {
       Button buttonAddCall = new Button("Add Phone Call");
       Button buttonPrettyPrintAllCalls = new Button("Display All Calls");
       Button buttonSearch = new Button("Search");
+      Button buttonHelp = new Button("Help");
 
       //Text box~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       final TextArea textBoxResults = new TextArea();
@@ -73,6 +74,7 @@ public class PhoneBillGwt implements EntryPoint {
       rootPanel.add(buttonPrettyPrintAllCalls);
       rootPanel.add(buttonSearch);
       rootPanel.add(buttonPingServer);
+      rootPanel.add(buttonHelp);
       rootPanel.add(panelAddNewCustomer,300,150);
 
 
@@ -103,10 +105,40 @@ public class PhoneBillGwt implements EntryPoint {
           }
       });
 
+      //Help Readme
+      buttonHelp.addClickHandler(new ClickHandler() {
+          @Override
+          public void onClick(ClickEvent clickEvent) {
+              Window.alert("This is the README!");
+          }
+      });
+
       //CreatePhoneBill
       buttonCreatePhoneBill.addClickHandler(new ClickHandler() {
           @Override
           public void onClick(ClickEvent clickEvent) {
+              try {
+                  Window.alert("Button Clicked");
+                  PhoneBillServiceAsync async = GWT.create(PhoneBillService.class);
+
+                  Window.alert("Made it to add");
+                  async.add(textBoxCustomerName.getValue(), new PhoneCall(textBoxCallerNumber.getValue(), textBoxCalleeNumber.getValue(), textBoxStartTime.getValue(), textBoxEndTime.getValue()), new AsyncCallback<Void>() {
+                      @Override
+                      public void onFailure(Throwable throwable) {
+                          Window.alert(throwable.getMessage());
+                      }
+
+                      @Override
+                      public void onSuccess(Void aVoid) {
+                          textBoxResults.setValue("HURRAY " );
+                      }
+                  });
+              }
+              catch(Exception ex){
+                  //Not enough args or something
+                  Window.alert("Please provide correct arguments");
+                  return;
+              }
 
           }
       });

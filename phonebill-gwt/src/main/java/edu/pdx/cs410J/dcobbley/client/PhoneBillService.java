@@ -9,10 +9,10 @@ import java.util.Map;
  * Created by David on 8/9/2015.
  */
 public interface PhoneBillService extends RemoteService {
-    public void add();
+    public void add(String customer ,PhoneCall call);
 
     public Map<String,PhoneBill> print();
 
-    public List<PhoneCall> search();
+    public List<PhoneCall> search(String customer, String startTime);
 
 }

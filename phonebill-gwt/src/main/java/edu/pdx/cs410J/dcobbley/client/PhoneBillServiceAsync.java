@@ -9,9 +9,9 @@ import java.util.Map;
  * Created by David on 8/9/2015.
  */
 public interface PhoneBillServiceAsync {
-    public void add(AsyncCallback<Void> async);
+    public void add(String customer ,PhoneCall call,AsyncCallback<Void> async);
 
     void print(AsyncCallback<Map<String, PhoneBill>> async);
 
-    void search(AsyncCallback<List<PhoneCall>>async);
+    void search(String customer, String startTime,AsyncCallback<List<PhoneCall>>async);
 }

@@ -23,7 +23,7 @@
 
   <servlet-mapping>
     <servlet-name>PhoneBillServlet</servlet-name>
-    <url-pattern>/phonebill/PhoneBillService</url-pattern>
+    <url-pattern>/phonebill/add</url-pattern>
   </servlet-mapping>
 
 
