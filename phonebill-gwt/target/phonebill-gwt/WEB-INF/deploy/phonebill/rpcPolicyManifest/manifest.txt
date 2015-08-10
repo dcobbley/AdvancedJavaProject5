@@ -1,3 +1,0 @@
-# Module phonebill
-# RPC service class, partial path of RPC policy file
-edu.pdx.cs410J.dcobbley.client.PingService, 93A06CC0D1E688F9F2E9BD3DAF00A523.gwt.rpc
