@@ -41,8 +41,8 @@ public class PhoneBillServiceImpl extends RemoteServiceServlet implements PhoneB
         DefaultDateTimeFormatInfo formatInfo = new DefaultDateTimeFormatInfo();
         DateTimeFormat ShortDateFormat = new DateTimeFormat("MM/dd/yyy hh:mm a",formatInfo){};
         Long begin;
-            try {
-            Date search = ShortDateFormat.parse(startTime);
+        try {
+            Date search = ShortDateFormat.parse(startTime.trim());
             begin = search.getTime();
         }
         catch(Exception ex){
@@ -51,7 +51,7 @@ public class PhoneBillServiceImpl extends RemoteServiceServlet implements PhoneB
         }
 
         List<PhoneCall> data = new ArrayList<PhoneCall>();
-        if(data.isEmpty())
+        if(this.data.isEmpty())
             return null;
 
         bill = this.data.get(customer);

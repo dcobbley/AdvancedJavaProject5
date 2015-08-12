@@ -25,6 +25,7 @@ public class PhoneBillGwt implements EntryPoint {
 
       //Define all the buttons here ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       //Button button = new Button("");
+/*
 
       Button buttonPingServer = new Button("Ping Server");
       Button buttonCreatePhoneBill = new Button("Create Phonebill");
@@ -36,7 +37,7 @@ public class PhoneBillGwt implements EntryPoint {
       //Text box~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       final TextArea textBoxResults = new TextArea();
       textBoxResults.setReadOnly(true);
-      textBoxResults.setSize("200px","200px");
+      textBoxResults.setSize("800px","100px");
 
       //Vertical Panels~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       VerticalPanel panelHeader = new VerticalPanel();
@@ -65,19 +66,18 @@ public class PhoneBillGwt implements EntryPoint {
       final TextBox textBoxEndTime = new TextBox();
       panelAddNewCustomer.add(textBoxEndTime);
 
-
-
       //add all the buttons to the root panel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       RootPanel rootPanel = RootPanel.get();
 
       //rootPanel.add....
-      rootPanel.add(buttonAddCall);
-      rootPanel.add(buttonCreatePhoneBill);
-      rootPanel.add(buttonPrettyPrintAllCalls);
-      rootPanel.add(buttonSearch);
-      rootPanel.add(buttonPingServer);
-      rootPanel.add(buttonHelp);
-      rootPanel.add(panelAddNewCustomer,300,150);
+      rootPanel.add(buttonAddCall,50,50);
+      rootPanel.add(buttonCreatePhoneBill,170,50);
+      rootPanel.add(buttonPrettyPrintAllCalls,297,50);
+      rootPanel.add(buttonSearch,423,50);
+      //rootPanel.add(buttonPingServer,525,50);
+      rootPanel.add(buttonHelp,493,50);
+      rootPanel.add(panelAddNewCustomer, 50, 250);
+
 
 
       //add Vertical Panels to the root panel~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -111,7 +111,11 @@ public class PhoneBillGwt implements EntryPoint {
       buttonHelp.addClickHandler(new ClickHandler() {
           @Override
           public void onClick(ClickEvent clickEvent) {
-              Window.alert("This is the README!");
+              Window.alert("This is the README for the PhoneBill3000 web application!\n" +
+                      "Please enter the appropriate information for a customer. Including the name," +
+                      "caller and callee number, and a start and end time for the phone call.\n" +
+                      "You may store customers phonebills here, search them by starting time, or " +
+                      "display all phonebills");
           }
       });
 
@@ -120,14 +124,16 @@ public class PhoneBillGwt implements EntryPoint {
           @Override
           public void onClick(ClickEvent clickEvent) {
               try {
-                  final PhoneCall tempCall = new PhoneCall(textBoxCallerNumber.getValue(), textBoxCalleeNumber.getValue(), textBoxStartTime.getValue(), textBoxEndTime.getValue());
+                  final PhoneCall tempCall = new PhoneCall(textBoxCallerNumber.getValue().trim(), textBoxCalleeNumber.getValue().trim(), textBoxStartTime.getValue().trim(), textBoxEndTime.getValue().trim());
+                  if(tempCall.exceptionWasThrown()){
+                      return;
+                  }
                   PhoneBillServiceAsync async = GWT.create(PhoneBillService.class);
                   async.add(textBoxCustomerName.getValue(),tempCall , new AsyncCallback<Void>() {
                       @Override
                       public void onFailure(Throwable throwable) {
                           Window.alert(throwable.getMessage());
                       }
-
                       @Override
                       public void onSuccess(Void aVoid) {
                           textBoxResults.setValue(textBoxCustomerName.getValue()+" has added a new phone call: "+tempCall.toString() );
@@ -149,8 +155,11 @@ public class PhoneBillGwt implements EntryPoint {
           public void onClick(ClickEvent clickEvent) {
               try {
                   final PhoneCall tempCall = new PhoneCall(textBoxCallerNumber.getValue(), textBoxCalleeNumber.getValue(), textBoxStartTime.getValue(), textBoxEndTime.getValue());
+                  if(tempCall.exceptionWasThrown()){
+                      return;
+                  }
                   PhoneBillServiceAsync async = GWT.create(PhoneBillService.class);
-                  async.add(textBoxCustomerName.getValue(),tempCall , new AsyncCallback<Void>() {
+                  async.add(textBoxCustomerName.getValue().trim(),tempCall , new AsyncCallback<Void>() {
                       @Override
                       public void onFailure(Throwable throwable) {
                           Window.alert(throwable.getMessage());
@@ -184,15 +193,15 @@ public class PhoneBillGwt implements EntryPoint {
 
                   @Override
                   public void onSuccess(Map<String, PhoneBill> stringPhoneBillMap) {
-                      String prettyCalls="";
+                      String prettyCalls = "";
                       //pretty print it
-                      if(stringPhoneBillMap==null||stringPhoneBillMap.isEmpty()){
+                      if (stringPhoneBillMap == null || stringPhoneBillMap.isEmpty()) {
                           Window.alert("No phonebills to show");
                           return;
                       }
-                      for(String customer: stringPhoneBillMap.keySet()){
+                      for (String customer : stringPhoneBillMap.keySet()) {
                           Collection calls = stringPhoneBillMap.get(customer).getPhoneCalls();
-                          prettyCalls += customer+": "+calls.toString()+"\n";
+                          prettyCalls += customer + ": " + calls.toString() + "\n";
                       }
                       textBoxResults.setValue(prettyCalls);
                   }
@@ -228,6 +237,7 @@ public class PhoneBillGwt implements EntryPoint {
           }
       });
 
+*/
 
 
   }

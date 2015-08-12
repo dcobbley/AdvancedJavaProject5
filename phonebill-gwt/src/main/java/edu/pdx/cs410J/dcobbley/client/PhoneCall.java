@@ -18,6 +18,7 @@ public class PhoneCall extends AbstractPhoneCall implements Comparable<PhoneCall
   String calleeNumber;
   public Date startTime;
   public Date endTime;
+  private boolean flag;
 
   /**
    * Constructor for the phonecall class. Holds all relavent data for a particular phonecall
@@ -27,7 +28,7 @@ public class PhoneCall extends AbstractPhoneCall implements Comparable<PhoneCall
    * @param endTime The time at which the phonecall ended
    */
   public PhoneCall(String callerNumber, String calleeNumber, String startTime, String endTime){
-
+    flag = false;
     //Check for bad data
     try{
       if(startTime.contains("\"")||endTime.contains("\""))
@@ -49,6 +50,7 @@ public class PhoneCall extends AbstractPhoneCall implements Comparable<PhoneCall
     }
     catch(IllegalArgumentException ex) {
       Window.alert(ex.getMessage());
+      flag = true;
       return;
     }
     this.callerNumber = callerNumber;
@@ -56,6 +58,7 @@ public class PhoneCall extends AbstractPhoneCall implements Comparable<PhoneCall
     setDate(startTime,endTime);
   }
   public PhoneCall(){
+    flag = false;
     try {
       calleeNumber = "";
       callerNumber = "";
@@ -64,12 +67,14 @@ public class PhoneCall extends AbstractPhoneCall implements Comparable<PhoneCall
     }
     catch(Exception ex){
       Window.alert(ex.getMessage());
+      flag = true;
       return;
     }
   }
 
 
   public void setDate(String start, String end){
+    flag = false;
     DefaultDateTimeFormatInfo formatInfo = new DefaultDateTimeFormatInfo();
     DateTimeFormat ShortDateFormat = new DateTimeFormat("MM/dd/yyy hh:mm a",formatInfo){};
     try {
@@ -78,13 +83,14 @@ public class PhoneCall extends AbstractPhoneCall implements Comparable<PhoneCall
     }
     catch(Exception ex){
       Window.alert("Error Parsing the time, please enter valid time, dont forget to include am/pm " + ex.getMessage());
+      flag = true;
       return;
     }
   }
 
-
-
-
+  public boolean exceptionWasThrown(){
+    return flag;
+  }
 
   /**
    *

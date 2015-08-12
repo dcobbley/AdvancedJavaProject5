@@ -87,8 +87,6 @@ public class PhoneBill extends AbstractPhoneBill
     }
 
     Collections.sort(phoneCalls);
-
-
   }
 
   /**
@@ -98,5 +96,13 @@ public class PhoneBill extends AbstractPhoneBill
   @Override
   public Collection getPhoneCalls() {
     return phoneCalls;
+  }
+
+  public boolean exceptionWasThrown(){
+    for(PhoneCall call: phoneCalls){
+      if(call.exceptionWasThrown())
+        return true;
+    }
+    return false;
   }
 }
