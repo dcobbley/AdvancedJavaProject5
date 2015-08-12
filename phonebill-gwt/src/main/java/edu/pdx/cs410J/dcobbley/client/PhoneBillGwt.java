@@ -25,7 +25,6 @@ public class PhoneBillGwt implements EntryPoint {
 
       //Define all the buttons here ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       //Button button = new Button("");
-/*
 
       Button buttonPingServer = new Button("Ping Server");
       Button buttonCreatePhoneBill = new Button("Create Phonebill");
@@ -237,7 +236,6 @@ public class PhoneBillGwt implements EntryPoint {
           }
       });
 
-*/
 
 
   }
