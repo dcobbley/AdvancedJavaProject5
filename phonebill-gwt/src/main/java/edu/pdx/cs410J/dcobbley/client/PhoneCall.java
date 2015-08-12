@@ -38,7 +38,6 @@ public class PhoneCall extends AbstractPhoneCall implements Comparable<PhoneCall
 
       String[] tempStart = startTime.split(" ");
       String[] tempEnd= endTime.split(" ");
-      Window.alert("HereA");
       if(!tempStart[0].matches("(0?[1-9]|1[012])/(0?[1-9]|[12][0-9]|3[01])/((19|20)\\d\\d)")||!tempEnd[0].matches("(0?[1-9]|1[012])/(0?[1-9]|[12][0-9]|3[01])/((19|20)\\d\\d)")) {
         throw new IllegalArgumentException("Date format must follow mm/dd/yyyy");
       }
@@ -52,7 +51,6 @@ public class PhoneCall extends AbstractPhoneCall implements Comparable<PhoneCall
       Window.alert(ex.getMessage());
       return;
     }
-    Window.alert("HereB");
     this.callerNumber = callerNumber;
     this.calleeNumber = calleeNumber;
     setDate(startTime,endTime);
@@ -72,7 +70,6 @@ public class PhoneCall extends AbstractPhoneCall implements Comparable<PhoneCall
 
 
   public void setDate(String start, String end){
-    Window.alert("HereC");
     DefaultDateTimeFormatInfo formatInfo = new DefaultDateTimeFormatInfo();
     DateTimeFormat ShortDateFormat = new DateTimeFormat("MM/dd/yyy hh:mm a",formatInfo){};
     try {

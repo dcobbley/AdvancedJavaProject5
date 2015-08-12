@@ -11,6 +11,8 @@ import edu.pdx.cs410J.AbstractPhoneCall;
 import edu.pdx.cs410J.AbstractPhoneBill;
 
 import java.util.Collection;
+import java.util.List;
+import java.util.Map;
 
 /**
  * A basic GWT class that makes sure that we can send an Phone Bill back from the server
@@ -118,11 +120,9 @@ public class PhoneBillGwt implements EntryPoint {
           @Override
           public void onClick(ClickEvent clickEvent) {
               try {
-                  Window.alert("Button Clicked");
+                  final PhoneCall tempCall = new PhoneCall(textBoxCallerNumber.getValue(), textBoxCalleeNumber.getValue(), textBoxStartTime.getValue(), textBoxEndTime.getValue());
                   PhoneBillServiceAsync async = GWT.create(PhoneBillService.class);
-
-                  Window.alert("Made it to add");
-                  async.add(textBoxCustomerName.getValue(), new PhoneCall(textBoxCallerNumber.getValue(), textBoxCalleeNumber.getValue(), textBoxStartTime.getValue(), textBoxEndTime.getValue()), new AsyncCallback<Void>() {
+                  async.add(textBoxCustomerName.getValue(),tempCall , new AsyncCallback<Void>() {
                       @Override
                       public void onFailure(Throwable throwable) {
                           Window.alert(throwable.getMessage());
@@ -130,13 +130,13 @@ public class PhoneBillGwt implements EntryPoint {
 
                       @Override
                       public void onSuccess(Void aVoid) {
-                          textBoxResults.setValue("HURRAY " );
+                          textBoxResults.setValue(textBoxCustomerName.getValue()+" has added a new phone call: "+tempCall.toString() );
                       }
                   });
               }
               catch(Exception ex){
                   //Not enough args or something
-                  Window.alert("Please provide correct arguments");
+                  Window.alert("Please provide correct arguments"+ex.getMessage());
                   return;
               }
 
@@ -147,6 +147,26 @@ public class PhoneBillGwt implements EntryPoint {
       buttonAddCall.addClickHandler(new ClickHandler() {
           @Override
           public void onClick(ClickEvent clickEvent) {
+              try {
+                  final PhoneCall tempCall = new PhoneCall(textBoxCallerNumber.getValue(), textBoxCalleeNumber.getValue(), textBoxStartTime.getValue(), textBoxEndTime.getValue());
+                  PhoneBillServiceAsync async = GWT.create(PhoneBillService.class);
+                  async.add(textBoxCustomerName.getValue(),tempCall , new AsyncCallback<Void>() {
+                      @Override
+                      public void onFailure(Throwable throwable) {
+                          Window.alert(throwable.getMessage());
+                      }
+
+                      @Override
+                      public void onSuccess(Void aVoid) {
+                          textBoxResults.setValue(textBoxCustomerName.getValue()+" has added a new phone call: "+tempCall.toString() );
+                      }
+                  });
+              }
+              catch(Exception ex){
+                  //Not enough args or something
+                  Window.alert("Please provide correct arguments"+ex.getMessage());
+                  return;
+              }
 
           }
       });
@@ -154,13 +174,56 @@ public class PhoneBillGwt implements EntryPoint {
       buttonPrettyPrintAllCalls.addClickHandler(new ClickHandler() {
           @Override
           public void onClick(ClickEvent clickEvent) {
+              PhoneBillServiceAsync async = GWT.create(PhoneBillService.class);
+              async.print(new AsyncCallback<Map<String, PhoneBill>>() {
 
+                  @Override
+                  public void onFailure(Throwable throwable) {
+                      Window.alert(throwable.getMessage());
+                  }
+
+                  @Override
+                  public void onSuccess(Map<String, PhoneBill> stringPhoneBillMap) {
+                      String prettyCalls="";
+                      //pretty print it
+                      if(stringPhoneBillMap==null||stringPhoneBillMap.isEmpty()){
+                          Window.alert("No phonebills to show");
+                          return;
+                      }
+                      for(String customer: stringPhoneBillMap.keySet()){
+                          Collection calls = stringPhoneBillMap.get(customer).getPhoneCalls();
+                          prettyCalls += customer+": "+calls.toString()+"\n";
+                      }
+                      textBoxResults.setValue(prettyCalls);
+                  }
+              });
           }
       });
       //Search for user
       buttonSearch.addClickHandler(new ClickHandler() {
           @Override
           public void onClick(ClickEvent clickEvent) {
+              PhoneBillServiceAsync async = GWT.create(PhoneBillService.class);
+              async.search(textBoxCustomerName.getValue(), textBoxStartTime.getValue(), new AsyncCallback<List<PhoneCall>>() {
+                  @Override
+                  public void onFailure(Throwable throwable) {
+                      Window.alert("error "+throwable.getMessage());
+                  }
+
+                  @Override
+                  public void onSuccess(List<PhoneCall> phoneCalls) {
+                      String prettyCalls="";
+                      if(phoneCalls==null||phoneCalls.isEmpty()){
+                          Window.alert("No phonecalls matching under "+textBoxCustomerName.getValue());
+                          return;
+                      }
+                      //pretty print the search calls
+                      for(PhoneCall call: phoneCalls){
+                          prettyCalls += call.toString()+"\n";
+                      }
+                      textBoxResults.setValue(prettyCalls);
+                  }
+              });
 
           }
       });

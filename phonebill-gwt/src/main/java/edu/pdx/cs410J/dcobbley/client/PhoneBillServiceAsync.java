@@ -11,7 +11,7 @@ import java.util.Map;
 public interface PhoneBillServiceAsync {
     public void add(String customer ,PhoneCall call,AsyncCallback<Void> async);
 
-    void print(AsyncCallback<Map<String, PhoneBill>> async);
+    public void print(AsyncCallback<Map<String, PhoneBill>> async);
 
-    void search(String customer, String startTime,AsyncCallback<List<PhoneCall>>async);
+    public void search(String customer, String startTime,AsyncCallback<List<PhoneCall>>async);
 }
