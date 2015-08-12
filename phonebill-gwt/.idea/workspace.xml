@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a1ab381-0eea-4f46-818f-9d4c2bd6f0a6" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/.gitignore" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/dcobbley/client/PhoneBillGwt.java" afterPath="$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/dcobbley/client/PhoneBillGwt.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="phonebill-gwt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,42 +43,18 @@
       <file leaf-file-name="PhoneBillGwt.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/dcobbley/client/PhoneBillGwt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26970956">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.39834026">
+              <caret line="204" column="124" selection-start-line="204" selection-start-column="124" selection-end-line="204" selection-end-column="124" />
               <folding>
                 <element signature="e#3322#4182#0" expanded="true" />
-                <element signature="e#3589#3590#0" expanded="true" />
-                <element signature="e#3660#3661#0" expanded="true" />
                 <element signature="e#4181#4182#0" expanded="true" />
-                <element signature="e#4239#4797#0" expanded="true" />
-                <element signature="e#4796#4797#0" expanded="true" />
-                <element signature="e#4869#6183#0" expanded="true" />
                 <element signature="e#5575#5576#0" expanded="true" />
                 <element signature="e#5663#5664#0" expanded="true" />
-                <element signature="e#6182#6183#0" expanded="true" />
-                <element signature="e#6247#7541#0" expanded="true" />
                 <element signature="e#6932#6933#0" expanded="true" />
                 <element signature="e#7020#7021#0" expanded="true" />
-                <element signature="e#7540#7541#0" expanded="true" />
-                <element signature="e#7613#8841#0" expanded="true" />
-                <element signature="e#7951#7952#0" expanded="true" />
-                <element signature="e#8031#8032#0" expanded="true" />
-                <element signature="e#8840#8841#0" expanded="true" />
-                <element signature="e#8903#10072#0" expanded="true" />
-                <element signature="e#9295#9296#0" expanded="true" />
-                <element signature="e#9384#9385#0" expanded="true" />
-                <element signature="e#10071#10072#0" expanded="true" />
+                <element signature="e#7613#8930#0" expanded="true" />
+                <element signature="e#8929#8930#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhoneBillGwt.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/phonebill-gwt/PhoneBillGwt.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -259,7 +237,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -272,38 +249,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="phonebill-gwt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phonebill-gwt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phonebill-gwt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phonebill-gwt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phonebill-gwt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phonebill-gwt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="phonebill-gwt" />
@@ -446,6 +391,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -751,12 +697,13 @@
       <workItem from="1439228577125" duration="13239000" />
       <workItem from="1439334971847" duration="6509000" />
       <workItem from="1439397624604" duration="4028000" />
-      <workItem from="1439403927312" duration="624000" />
+      <workItem from="1439403927312" duration="625000" />
+      <workItem from="1439409995615" duration="1969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36859000" />
+    <option name="totallyTimeSpent" value="38829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1535" height="876" extended-state="6" />
@@ -770,9 +717,10 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16252519" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16252519" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -780,14 +728,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33441558" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -816,6 +763,49 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/dcobbley/client/PhoneBill.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/dcobbley/client/PhoneBillGwt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding>
+            <element signature="e#3322#4182#0" expanded="true" />
+            <element signature="e#4181#4182#0" expanded="true" />
+            <element signature="e#5575#5576#0" expanded="true" />
+            <element signature="e#5663#5664#0" expanded="true" />
+            <element signature="e#6932#6933#0" expanded="true" />
+            <element signature="e#7020#7021#0" expanded="true" />
+            <element signature="e#7613#8930#0" expanded="true" />
+            <element signature="e#8929#8930#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/dcobbley/server/PhoneBillServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/dcobbley/client/PhoneCall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/dcobbley/client/PhoneBill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
@@ -827,36 +817,14 @@
           <caret line="139" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
           <folding>
             <element signature="e#3322#4182#0" expanded="true" />
-            <element signature="e#3589#3590#0" expanded="true" />
-            <element signature="e#3660#3661#0" expanded="true" />
             <element signature="e#4181#4182#0" expanded="true" />
-            <element signature="e#4239#4797#0" expanded="true" />
-            <element signature="e#4796#4797#0" expanded="true" />
-            <element signature="e#4869#6183#0" expanded="true" />
             <element signature="e#5575#5576#0" expanded="true" />
             <element signature="e#5663#5664#0" expanded="true" />
-            <element signature="e#6182#6183#0" expanded="true" />
-            <element signature="e#6247#7541#0" expanded="true" />
             <element signature="e#6932#6933#0" expanded="true" />
             <element signature="e#7020#7021#0" expanded="true" />
-            <element signature="e#7540#7541#0" expanded="true" />
-            <element signature="e#7613#8841#0" expanded="true" />
-            <element signature="e#7951#7952#0" expanded="true" />
-            <element signature="e#8031#8032#0" expanded="true" />
-            <element signature="e#8840#8841#0" expanded="true" />
-            <element signature="e#8903#10072#0" expanded="true" />
-            <element signature="e#9295#9296#0" expanded="true" />
-            <element signature="e#9384#9385#0" expanded="true" />
-            <element signature="e#10071#10072#0" expanded="true" />
+            <element signature="e#7613#8930#0" expanded="true" />
+            <element signature="e#8929#8930#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/phonebill-gwt/PhoneBillGwt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,27 +860,13 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#3322#4182#0" expanded="true" />
-            <element signature="e#3589#3590#0" expanded="true" />
-            <element signature="e#3660#3661#0" expanded="true" />
             <element signature="e#4181#4182#0" expanded="true" />
-            <element signature="e#4239#4797#0" expanded="true" />
-            <element signature="e#4796#4797#0" expanded="true" />
-            <element signature="e#4869#6183#0" expanded="true" />
             <element signature="e#5575#5576#0" expanded="true" />
             <element signature="e#5663#5664#0" expanded="true" />
-            <element signature="e#6182#6183#0" expanded="true" />
-            <element signature="e#6247#7541#0" expanded="true" />
             <element signature="e#6932#6933#0" expanded="true" />
             <element signature="e#7020#7021#0" expanded="true" />
-            <element signature="e#7540#7541#0" expanded="true" />
-            <element signature="e#7613#8841#0" expanded="true" />
-            <element signature="e#7951#7952#0" expanded="true" />
-            <element signature="e#8031#8032#0" expanded="true" />
-            <element signature="e#8840#8841#0" expanded="true" />
-            <element signature="e#8903#10072#0" expanded="true" />
-            <element signature="e#9295#9296#0" expanded="true" />
-            <element signature="e#9384#9385#0" expanded="true" />
-            <element signature="e#10071#10072#0" expanded="true" />
+            <element signature="e#7613#8930#0" expanded="true" />
+            <element signature="e#8929#8930#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -956,27 +910,13 @@
           <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="49" />
           <folding>
             <element signature="e#3322#4182#0" expanded="true" />
-            <element signature="e#3589#3590#0" expanded="true" />
-            <element signature="e#3660#3661#0" expanded="true" />
             <element signature="e#4181#4182#0" expanded="true" />
-            <element signature="e#4239#4797#0" expanded="true" />
-            <element signature="e#4796#4797#0" expanded="true" />
-            <element signature="e#4869#6183#0" expanded="true" />
             <element signature="e#5575#5576#0" expanded="true" />
             <element signature="e#5663#5664#0" expanded="true" />
-            <element signature="e#6182#6183#0" expanded="true" />
-            <element signature="e#6247#7541#0" expanded="true" />
             <element signature="e#6932#6933#0" expanded="true" />
             <element signature="e#7020#7021#0" expanded="true" />
-            <element signature="e#7540#7541#0" expanded="true" />
-            <element signature="e#7613#8841#0" expanded="true" />
-            <element signature="e#7951#7952#0" expanded="true" />
-            <element signature="e#8031#8032#0" expanded="true" />
-            <element signature="e#8840#8841#0" expanded="true" />
-            <element signature="e#8903#10072#0" expanded="true" />
-            <element signature="e#9295#9296#0" expanded="true" />
-            <element signature="e#9384#9385#0" expanded="true" />
-            <element signature="e#10071#10072#0" expanded="true" />
+            <element signature="e#7613#8930#0" expanded="true" />
+            <element signature="e#8929#8930#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1017,9 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1063,27 +1000,13 @@
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="e#3322#4182#0" expanded="true" />
-            <element signature="e#3589#3590#0" expanded="true" />
-            <element signature="e#3660#3661#0" expanded="true" />
             <element signature="e#4181#4182#0" expanded="true" />
-            <element signature="e#4239#4797#0" expanded="true" />
-            <element signature="e#4796#4797#0" expanded="true" />
-            <element signature="e#4869#6183#0" expanded="true" />
             <element signature="e#5575#5576#0" expanded="true" />
             <element signature="e#5663#5664#0" expanded="true" />
-            <element signature="e#6182#6183#0" expanded="true" />
-            <element signature="e#6247#7541#0" expanded="true" />
             <element signature="e#6932#6933#0" expanded="true" />
             <element signature="e#7020#7021#0" expanded="true" />
-            <element signature="e#7540#7541#0" expanded="true" />
-            <element signature="e#7613#8841#0" expanded="true" />
-            <element signature="e#7951#7952#0" expanded="true" />
-            <element signature="e#8031#8032#0" expanded="true" />
-            <element signature="e#8840#8841#0" expanded="true" />
-            <element signature="e#8903#10072#0" expanded="true" />
-            <element signature="e#9295#9296#0" expanded="true" />
-            <element signature="e#9384#9385#0" expanded="true" />
-            <element signature="e#10071#10072#0" expanded="true" />
+            <element signature="e#7613#8930#0" expanded="true" />
+            <element signature="e#8929#8930#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1114,9 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1152,27 +1072,13 @@
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="e#3322#4182#0" expanded="true" />
-            <element signature="e#3589#3590#0" expanded="true" />
-            <element signature="e#3660#3661#0" expanded="true" />
             <element signature="e#4181#4182#0" expanded="true" />
-            <element signature="e#4239#4797#0" expanded="true" />
-            <element signature="e#4796#4797#0" expanded="true" />
-            <element signature="e#4869#6183#0" expanded="true" />
             <element signature="e#5575#5576#0" expanded="true" />
             <element signature="e#5663#5664#0" expanded="true" />
-            <element signature="e#6182#6183#0" expanded="true" />
-            <element signature="e#6247#7541#0" expanded="true" />
             <element signature="e#6932#6933#0" expanded="true" />
             <element signature="e#7020#7021#0" expanded="true" />
-            <element signature="e#7540#7541#0" expanded="true" />
-            <element signature="e#7613#8841#0" expanded="true" />
-            <element signature="e#7951#7952#0" expanded="true" />
-            <element signature="e#8031#8032#0" expanded="true" />
-            <element signature="e#8840#8841#0" expanded="true" />
-            <element signature="e#8903#10072#0" expanded="true" />
-            <element signature="e#9295#9296#0" expanded="true" />
-            <element signature="e#9384#9385#0" expanded="true" />
-            <element signature="e#10071#10072#0" expanded="true" />
+            <element signature="e#7613#8930#0" expanded="true" />
+            <element signature="e#8929#8930#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1221,28 +1127,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/dcobbley/client/PhoneBillServiceAsync.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/dcobbley/client/PhoneBillService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/dcobbley/client/PhoneCall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1279,41 +1167,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/phonebill-gwt/PhoneBillGwt.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/dcobbley/client/PhoneBillServiceAsync.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24896266">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/dcobbley/client/PhoneCall.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/pdx/cs410J/dcobbley/client/PhoneBillGwt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26970956">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.39834026">
+          <caret line="204" column="124" selection-start-line="204" selection-start-column="124" selection-end-line="204" selection-end-column="124" />
           <folding>
             <element signature="e#3322#4182#0" expanded="true" />
-            <element signature="e#3589#3590#0" expanded="true" />
-            <element signature="e#3660#3661#0" expanded="true" />
             <element signature="e#4181#4182#0" expanded="true" />
-            <element signature="e#4239#4797#0" expanded="true" />
-            <element signature="e#4796#4797#0" expanded="true" />
-            <element signature="e#4869#6183#0" expanded="true" />
             <element signature="e#5575#5576#0" expanded="true" />
             <element signature="e#5663#5664#0" expanded="true" />
-            <element signature="e#6182#6183#0" expanded="true" />
-            <element signature="e#6247#7541#0" expanded="true" />
             <element signature="e#6932#6933#0" expanded="true" />
             <element signature="e#7020#7021#0" expanded="true" />
-            <element signature="e#7540#7541#0" expanded="true" />
-            <element signature="e#7613#8841#0" expanded="true" />
-            <element signature="e#7951#7952#0" expanded="true" />
-            <element signature="e#8031#8032#0" expanded="true" />
-            <element signature="e#8840#8841#0" expanded="true" />
-            <element signature="e#8903#10072#0" expanded="true" />
-            <element signature="e#9295#9296#0" expanded="true" />
-            <element signature="e#9384#9385#0" expanded="true" />
-            <element signature="e#10071#10072#0" expanded="true" />
+            <element signature="e#7613#8930#0" expanded="true" />
+            <element signature="e#8929#8930#0" expanded="true" />
           </folding>
         </state>
       </provider>

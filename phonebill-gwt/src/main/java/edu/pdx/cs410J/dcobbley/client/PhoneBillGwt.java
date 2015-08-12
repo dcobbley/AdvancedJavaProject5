@@ -200,9 +200,9 @@ public class PhoneBillGwt implements EntryPoint {
                       }
                       for (String customer : stringPhoneBillMap.keySet()) {
                           Collection calls = stringPhoneBillMap.get(customer).getPhoneCalls();
-                          prettyCalls += customer + ": " + calls.toString() + "\n";
+                          prettyCalls+=prettyPrint((List<PhoneCall>) calls)+"\n";
                       }
-                      textBoxResults.setValue(prettyCalls);
+                      textBoxResults.setValue("#     caller      callee           Start Time          End Time              Duration \n"+prettyCalls);
                   }
               });
           }
@@ -220,23 +220,28 @@ public class PhoneBillGwt implements EntryPoint {
 
                   @Override
                   public void onSuccess(List<PhoneCall> phoneCalls) {
-                      String prettyCalls="";
                       if(phoneCalls==null||phoneCalls.isEmpty()){
                           Window.alert("No phonecalls matching under "+textBoxCustomerName.getValue());
                           return;
                       }
                       //pretty print the search calls
-                      for(PhoneCall call: phoneCalls){
-                          prettyCalls += call.toString()+"\n";
-                      }
-                      textBoxResults.setValue(prettyCalls);
+                      textBoxResults.setValue("#     caller      callee           Start Time          End Time              Duration \n"+prettyPrint(phoneCalls));
                   }
               });
 
           }
       });
-
-
-
   }
+    public String prettyPrint(List<PhoneCall> calls){
+        int x=0;
+        String prettyCalls="";
+        for(PhoneCall call: calls){
+            //prettyCalls += call.toString()+"\n";
+            prettyCalls += ++x + " " + call.getCaller() + "  " + call.getCallee() + "   " + call.getStartTimeString() + "  " + call.getEndTimeString() + "   " + call.duration() + "\n";
+        }
+        return prettyCalls;
+    }
+
+
+
 }
