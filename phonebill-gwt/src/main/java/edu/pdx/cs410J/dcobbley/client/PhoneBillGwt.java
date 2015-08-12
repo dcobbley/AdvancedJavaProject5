@@ -123,6 +123,26 @@ public class PhoneBillGwt implements EntryPoint {
           @Override
           public void onClick(ClickEvent clickEvent) {
               try {
+                  if(textBoxCustomerName.getValue() == ""){
+                      Window.alert("Please provide correct arguments for customer name");
+                      return;
+                  }
+                  if(textBoxCalleeNumber.getValue() == ""){
+                      Window.alert("Please provide correct arguments for callee number");
+                      return;
+                  }
+                  if(textBoxCallerNumber.getValue() == ""){
+                      Window.alert("Please provide correct arguments for caller number");
+                      return;
+                  }
+                  if(textBoxStartTime.getValue() == ""){
+                      Window.alert("Please provide correct arguments for start time");
+                      return;
+                  }
+                  if(textBoxEndTime.getValue() == ""){
+                      Window.alert("Please provide correct arguments for end Time");
+                      return;
+                  }
                   final PhoneCall tempCall = new PhoneCall(textBoxCallerNumber.getValue().trim(), textBoxCalleeNumber.getValue().trim(), textBoxStartTime.getValue().trim(), textBoxEndTime.getValue().trim());
                   if(tempCall.exceptionWasThrown()){
                       return;
@@ -153,6 +173,26 @@ public class PhoneBillGwt implements EntryPoint {
           @Override
           public void onClick(ClickEvent clickEvent) {
               try {
+                  if(textBoxCustomerName.getValue() == ""){
+                      Window.alert("Please provide correct arguments for customer name");
+                      return;
+                  }
+                  if(textBoxCalleeNumber.getValue() == ""){
+                      Window.alert("Please provide correct arguments for callee number");
+                      return;
+                  }
+                  if(textBoxCallerNumber.getValue() == ""){
+                      Window.alert("Please provide correct arguments for caller number");
+                      return;
+                  }
+                  if(textBoxStartTime.getValue() == ""){
+                      Window.alert("Please provide correct arguments for start time");
+                      return;
+                  }
+                  if(textBoxEndTime.getValue() == ""){
+                      Window.alert("Please provide correct arguments for end Time");
+                      return;
+                  }
                   final PhoneCall tempCall = new PhoneCall(textBoxCallerNumber.getValue(), textBoxCalleeNumber.getValue(), textBoxStartTime.getValue(), textBoxEndTime.getValue());
                   if(tempCall.exceptionWasThrown()){
                       return;
@@ -211,6 +251,14 @@ public class PhoneBillGwt implements EntryPoint {
       buttonSearch.addClickHandler(new ClickHandler() {
           @Override
           public void onClick(ClickEvent clickEvent) {
+              if(textBoxCustomerName.getValue() == ""){
+                  Window.alert("Please provide correct arguments for customer name");
+                  return;
+              }
+              if(textBoxStartTime.getValue() == ""){
+                  Window.alert("Please provide correct arguments for start time");
+                  return;
+              }
               PhoneBillServiceAsync async = GWT.create(PhoneBillService.class);
               async.search(textBoxCustomerName.getValue(), textBoxStartTime.getValue(), new AsyncCallback<List<PhoneCall>>() {
                   @Override
